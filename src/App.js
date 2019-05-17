@@ -1,26 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Product from './components/Product.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+      Props
+      <Product 
+        name="apple"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDIqfTtf7_8JF_F4NUAmUvL4O3P5IHp-dCvx6KBjB-ve8cGdLs"
+        price="1000"/>
+      <Product 
+        name="banane"
+        price="1500"/>
+      <Product 
+        name="melon"
+        price="1200"/>
+      </div>
+    );
+  }
+
 }
 
 export default App;
