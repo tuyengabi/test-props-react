@@ -7,7 +7,7 @@ class Product extends Component {
         <img src={ this.props.image } />
         <div>
           <h3>
-            { this.props.name }
+            { this.props.children }
           </h3>
           <p>
             { this.props.price } Euro

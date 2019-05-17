@@ -9,15 +9,23 @@ class App extends Component {
       <div>
       Props
       <Product 
-        name="apple"
         image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDIqfTtf7_8JF_F4NUAmUvL4O3P5IHp-dCvx6KBjB-ve8cGdLs"
-        price="1000"/>
+        price="1000"i
+      >
+        Apple
+      </Product>
       <Product 
-        name="banane"
-        price="1500"/>
+        image="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/half-peeled-banana-tianxin-zheng.jpg"
+        price="1500"
+      >
+        Banane
+      </Product>
       <Product 
-        name="melon"
-        price="1200"/>
+        image="http://flakphoto.com/assets/photos/henriette-mackey-lund-frog-skin-melon.jpg"
+        price="1200"
+      >
+        Melon
+      </Product>
       </div>
     );
   }
